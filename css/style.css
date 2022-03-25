@@ -56,7 +56,13 @@ h3 {
 }
 
 /* 슬라이더 */
+.slider{
+    width: 1280px;
+    margin: 0 auto;
+    overflow:hidden;
+}
 .slider .row{
+    width: 1200px;
     height: 800px;
     overflow: hidden;
     position: relative;
@@ -65,16 +71,16 @@ h3 {
 .slider .slide{
     position: absolute;
     left: 0%;
-    top: 0;
-    width: 1280px;
-    transition: 0.7s;
+    /* top: 0; */
+    width: 100%;
+    transition: 0.5s;
     z-index: -1000;
 }
 .slider .slide02{
-    left: 1280px;
+    left: 1200px;
 }
 .slider .slide03{
-    left: 2560px;
+    left: 2400px;
 }
 
 .footer{

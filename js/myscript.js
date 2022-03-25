@@ -6,13 +6,13 @@
                 nowSlide=1;
                 for(let idx=0;idx<slideEls.length;idx++){
                     let leftVal = slideEls.eq(idx).position().left;
-                    slideEls.eq(idx).css('left',leftVal+=2560);
+                    slideEls.eq(idx).css('left',leftVal+=2400);
                 }
             }else{
                 for(let idx=0;idx<slideEls.length;idx++){
                 let leftVal = slideEls.eq(idx).position().left;
-                slideEls.eq(idx).css('left',leftVal-=1280);
+                slideEls.eq(idx).css('left',leftVal-=1200);
                 }
                 nowSlide++;
             }
-        },5000);
+        },3000);
