@@ -16,8 +16,8 @@
     margin: 0 auto;
     
 }
-.container{
-    margin: 10px;
+.header .container{
+    margin-top: 100px;
 }
 /* logo,tit */
 h1 {
@@ -48,6 +48,7 @@ h3 {
     left: 0;
     right: 0;
     background-color: #fff;
+    z-index: 100;
 }
 .nav ul{
     display: flex;
@@ -105,6 +106,9 @@ h3 {
 .footer{
     background-color: #6667AB;
     color: #fff;
+}
+.footer .container{
+    margin-top: 60px;
 }
 .address{
     padding-bottom: 40px;
