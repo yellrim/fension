@@ -18,7 +18,7 @@
     
 }
 .header .container{
-    margin-top: 100px;
+    margin: 100px 0;
 }
 
 /* logo,tit */
@@ -70,12 +70,11 @@ h3 {
 /* 슬라이더 */
 .slider{
     width: 1200px;
-    margin: 0 auto;
     overflow:hidden;
 }
-.slider .container{
+/* .slider .container{
     margin-top: 60px;
-}
+} */
 
 .slider .row{
     width: 1200px;
@@ -91,12 +90,88 @@ h3 {
     width: 100%;
     transition: 0.5s;
     z-index: -1000;
+    float: left;
 }
 .slider .slide02{
     left: 1200px;
 }
 .slider .slide03{
     left: 2400px;
+}
+/* notice */
+.main .container{
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+}
+.notice {
+    height: 380px;
+    background-color: #fff;
+    border-top: 2px solid #6667AB;
+    border-bottom: 2px solid #6667AB;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.notice .notice-logo{
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    
+}
+.notice-list ul{
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr;
+    margin-left: 35px;
+}
+.notice-list li{
+    padding: 5px;
+}
+.notice-list ul li:nth-child(2){
+    display: none; 
+}
+.notice-tit{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+.notice-content{
+    padding: 1px 0;
+}
+.notice-content li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+.notice-content .content{
+    display: none;
+}
+.notice-content li:first-child{
+    text-align: left;
+}
+
+/* banner */
+.banner{
+    display: grid;
+}
+.banner .inner{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.banner-content{
+    position: absolute;
+    left: 30%;
+    bottom: 60px;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 20px;
+}
+.banner-content h4{
+    color: #000;
+    font-weight: 700;
+    font-size: 1em;
 }
 
 .footer{
