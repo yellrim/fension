@@ -65,56 +65,43 @@ h3 {
     font-weight: 900;
 }
 
-
-/* 슬라이드 */
-.slider{
-    width: 1280px;
-    margin: 0 auto;
-    overflow:hidden;
-}
-.slider .row{
-    position: relative;
-    height: 700px;
-    overflow: hidden;
-}
-/* 슬라이더 크기지정 */
-.slider .slide{
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    transition: 0.5s;
-    z-index: -1000;
-}
-.slider .slide02{
-    left: 1200px;
-}
-.slider .slide03{
-    left: 2400px;
-}
-.slide-txt{
-    display: none;
-}
-.slider:hover{
-    background-color: rgb(255, 255, 255,0.5);
-}
-.slider:hover .slide-txt{
+/* room */
+.room-info{
     display: flex;
     flex-flow: column nowrap;
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
-
-    color: #6667AB;
-    font-size: 100px;
-    font-weight: 500;
-    font-family: 'Hurricane';
-    text-align: center;
-
-
+    justify-content: flex-start;
 }
+.room-info .img-box{
+    display: block;
+    width: 600px;
+    height: 500px;
 
-/* 푸터 */
+    margin-left :400px;
+    float: left;
+}
+.img-box01{
+    margin-top: 50px;
+}
+.room-txt{
+    display: block;
+    width: 600px;
+    height: 500px;
+
+    margin-left: 50px;
+    float: left;
+}
+.room-tit{
+    color: #6667AB;
+    font-size: 20px;
+    font-weight: 900;
+    /* margin-top: 40px; */
+}
+.room-txt01{
+    padding-top: 50px;
+}
+.room-txt span{
+    font-weight: 600;
+}
 .footer{
     background-color: #6667AB;
     color: #fff;

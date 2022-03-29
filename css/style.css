@@ -15,6 +15,9 @@
 .container{
     margin: 10px;
 }
+.header{
+    position: relative;
+}
 /* logo,tit */
 h1 {
     font-family: 'Hurricane';
@@ -38,7 +41,12 @@ h3 {
 
 /* nav */
 .nav{
-    padding: 60px 200px 35px 200px;
+    padding: 35px 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }
 .nav ul{
     display: flex;
