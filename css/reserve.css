@@ -49,7 +49,7 @@ h3 {
     left: 0;
     right: 0;
     background-color: #fff;
-    z-index: 999;
+    z-index: 100;
 }
 .nav ul{
     display: flex;
@@ -66,60 +66,72 @@ h3 {
     color: #6667AB;
     font-weight: 900;
 }
-
-
-/* 슬라이드 */
-.slider{
-    width: 1280px;
-    margin: 0 auto;
-    overflow:hidden;
-}
-.slider .container{
-    margin-top: 60px;
-}
-.slider .row{
-    position: relative;
-    height: 700px;
+.main .img-box{
     overflow: hidden;
+    margin: 40px 0;
+    height: 300px;
 }
-/* 슬라이더 크기지정 */
-.slider .slide{
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    transform: translateY(-50%);
+.main .img-box img{
+    position: relative;
+    transform: translateY(-260px);
     width: 100%;
-    transition: 0.5s;
-    z-index: -1000;
+    height: 600px;
+    margin: 30px 0;
 }
-.slider .slide02{
-    left: 1200px;
-}
-.slider .slide03{
-    left: 2400px;
-}
-.slide-txt{
-    display: none;
-}
-.slider:hover{
-    background-color: rgb(255, 255, 255,0.5);
-}
-.slider:hover .slide-txt{
-    display: flex;
-    flex-flow: column nowrap;
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
+.main .img-tit h4{
+    position: absolute;
+    left: 37%;
+    top: 38%;
 
-    color: #6667AB;
+    color: #fff;
     font-size: 100px;
-    font-weight: 500;
-    font-family: 'Hurricane';
+    font-weight: 600;
     text-align: center;
-    z-index: 99;
-
+    text-shadow: #6667AB 1px 0 10px;
 }
-
-/* 푸터 */
+.sec{
+    margin: 200px 40px;
+}
+.sec h4{
+    font-size: 40px;
+    font-weight: 500;
+}
+.sec h4>span{
+    font-size: 24px;
+    font-weight: 400;
+    color: #cccccc;
+}
+.sec p{
+    font-size: 16px;
+    line-height: 3em;
+}
+.sec .sec-txt{
+    color: red;
+} 
+table{
+    width: 100%;
+}
+td{
+    background-color: #faf9f9;
+    text-align: center;
+    /* border-bottom: 1px solid #6667AB; */
+    padding: 20px;
+}
+.td-bottom{
+    border-bottom: 1px solid #cccccc;
+}
+.td-right{
+    border-right: 1px solid #cccccc;
+}
+button{
+    width: 100%;
+    padding: 20px;
+    margin: 40px 0;
+    font-size: 20px;
+    background-color: #e2e2e2;
+    border: 2px solid #cccccc;
+    cursor: pointer;
+}
 .footer{
     background-color: #6667AB;
     color: #fff;

@@ -14,7 +14,6 @@
 .wrap{
     width: 100%;
     margin: 0 auto;
-    
 }
 .header .container{
     margin-top: 100px;
@@ -26,6 +25,7 @@ h1 {
     text-align: center;
     margin-bottom: -15px;
     font-weight: 900;
+    text-shadow: #6f498f 1px 0 2px;
 }
 .header .container h1{
     color: #6667AB;
@@ -68,14 +68,15 @@ h3 {
 
 /* room */
 .room-info{
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
 }
-.room-info .img-box{
-    display: block;
+
+.img-box{
     width: 600px;
-    height: 500px;
+    height: 650px;
 
     margin-left :400px;
     float: left;
@@ -102,6 +103,15 @@ h3 {
 }
 .room-txt span{
     font-weight: 600;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: #e2e2e2;
+    border: 2px solid #cccccc;
+    cursor: pointer;
 }
 .footer{
     background-color: #6667AB;

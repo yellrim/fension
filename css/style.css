@@ -28,6 +28,7 @@ h1 {
     text-align: center;
     margin-bottom: -15px;
     font-weight: 900;
+    text-shadow: #6f498f 1px 0 2px;
 }
 .header .container h1{
     color: #6667AB;
@@ -98,6 +99,11 @@ h3 {
 .slider .slide03{
     left: 2400px;
 }
+
+.main .inner{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
 /* notice */
 .main .container{
     display: grid;
@@ -152,26 +158,28 @@ h3 {
 }
 
 /* banner */
-.banner{
-    display: grid;
-}
 .banner .inner{
     position: relative;
-    height: 200px;
-    overflow: hidden;
+    height: 350px;
+    margin-top: 40px;
+}
+.banner .img-box{
+    width: 320px;
+    height: 360px;
+    margin-right: 10px;
 }
 .banner-content{
     position: absolute;
     left: 30%;
     bottom: 60px;
-    text-align: center;
-    border: 1px solid #000;
-    padding: 20px;
 }
-.banner-content h4{
+.banner-content button{
     color: #000;
     font-weight: 700;
     font-size: 1em;
+    background-color: #fff;
+    border: 2px solid #6667AB;
+    padding: 20px;
 }
 
 .footer{
@@ -184,4 +192,66 @@ h3 {
 .address{
     padding-bottom: 40px;
     text-align: center;
+}
+
+/* 모달팝업 */
+.modal-notice{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-notice .inner{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
+}
+.modal-tit{
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #6667AB;
+}
+.modal-txt{
+    margin-bottom: 10px;
+    line-height: 3em;
+}
+
+.modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.modal-close:hover{
+    background-color: #6667AB;
+}
+
+table{
+    width: 950px;
+}
+td{
+    background-color: #faf9f9;
+    text-align: center;
+    /* border-bottom: 1px solid #6667AB; */
+    padding: 10px;
+}
+.td-bottom{
+    border-bottom: 1px solid #cccccc;
+}
+.td-right{
+    border-right: 1px solid #cccccc;
 }
