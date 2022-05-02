@@ -192,6 +192,7 @@ h3 {
 .address{
     padding-bottom: 40px;
     text-align: center;
+    line-height: 1.5em;
 }
 
 /* 모달팝업 */

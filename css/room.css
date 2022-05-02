@@ -67,27 +67,23 @@ h3 {
 }
 
 /* room */
-.room-info{
-    width: 100%;
+.room{
+    width: 80%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
 }
-
 .img-box{
-    width: 600px;
-    height: 650px;
-
-    margin-left :400px;
-    float: left;
+    width: 50%;
 }
 .img-box01{
     margin-top: 50px;
 }
 .room-txt{
     display: block;
-    width: 600px;
-    height: 500px;
+    width: 50%;
 
     margin-left: 50px;
     float: left;
@@ -123,4 +119,5 @@ button{
 .address{
     padding-bottom: 40px;
     text-align: center;
+    line-height: 1.5em;
 }
